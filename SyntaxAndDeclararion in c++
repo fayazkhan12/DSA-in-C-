@@ -1,0 +1,71 @@
+//SYANTAX AND DECLARARTION...
+
+
+/*
+#include<iostream>
+using namespace std; 
+int main()
+{
+    int n[10];
+    n[0]=34;
+    cout<<n[0];
+}
+
+*/
+
+// OR you can declare arrys elements with this ..
+/*
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n[10]={12,22,33,4,5,6,77,88,99,2};
+    cout<<n[3];
+}
+*/
+// TAKING INPUT AND PRINTING THE ANSWER BY ARRAYS..
+#include<iostream>
+using namespace std;
+int main(){
+    
+    int n[10];
+    
+    
+    for(int i=0;i<=9;i++)
+    {
+        cout<<"enter the element..";
+        cin>>n[i];
+    }
+    
+    for(int i=0;i<=9;i++)
+    
+    {
+      
+       cout<<"elements aree = "<<n[i]<<endl;; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
