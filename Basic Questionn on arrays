@@ -1,0 +1,38 @@
+//GIVEN AN ARRAY OF MARKS   OF STUDENTS IF THE MARKS OF ANY STUDENT IS LESS THAN 35 PRINTS ITS ROLL NUMBER
+
+/*#include<iostream>
+using namespace std;
+ int main()
+ {
+     int arr[10];
+     for(int i=0;i<=9;i++)
+     {
+         cout<<"marks of the students are = ";
+         cin>>arr[i];
+     }
+     
+    for(int i=0;i<=9;i++)
+    {
+        if(arr[i]<35)
+        {
+            cout<<"roll number is = "<<arr[i]<<endl;
+        }
+    }
+     
+     
+ }
+ 
+ */
+ 
+ #include<iostream>
+ using namespace std;
+ int main()
+ 
+ {
+     
+ int arr[]={1,22,33,44,2321,345,22,4,22,344,222,44,2221,45,5,5,3,22,3,4,323};
+ int n = sizeof(arr)/sizeof(arr[0]);
+ cout<<n;
+ }
+ 
+ 
