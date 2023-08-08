@@ -1,0 +1,212 @@
+ /*#include<iostream>
+using namespace std;
+int main()
+
+{
+    int n;
+    int pro=1;
+    cout<<"enter the number = ";
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<=n-1;i++)
+    {
+        cin>>arr[i];
+        
+        pro=arr[i]*pro;  //GALTI MAINE YHAA KI THIII 
+        
+    }
+     
+cout<<"product of elements are  = "<<pro;
+
+}
+*/
+
+
+
+
+
+
+
+
+
+QUES 2->
+
+
+
+// calculate the first and second max in an array
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"enter the elements = ";
+    cin>>n;
+    int arr[n];
+    
+    for(int i=0;i<=n-1;i++)
+    {
+        cin>>arr[i];
+        
+    }
+    
+    int smax;
+    smax=arr[0];
+    for(int i=1;i<=n-1;i++)
+    {
+        if(smax<arr[i])
+        {
+            smax=arr[i];
+        }
+        
+    }
+     int secmax;
+    secmax=arr[0];
+    for(int i=1;i<=n-1;i++)
+    {
+        if(secmax<arr[i] && secmax!=arr[0])
+        {
+            secmax=arr[i];
+        }
+        
+    }
+    cout<<"max number is"<<smax<<endl;
+     cout<<" second max number is"<<secmax<<endl;
+}
+
+
+
+QUES 3->
+
+
+//CALCULATE THE MN VALUE OF ALL ELEMENT
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"enter the number = ";
+    cin>>n;
+    
+    int arr[n];
+    for(int i=0;i<=n-1;i++)
+    {
+        cin>>arr[i];
+        
+    }
+    
+    int min=arr[0];
+    for(int i =1; i<=n-1;i++)
+    {
+        if(min>arr[i])
+        
+        {
+            min=arr[i];
+            
+            
+        }
+        
+        
+    }
+    
+    
+    cout<<"min element in the array is = "<<min;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+QUES-> 4
+
+
+
+// GIVEN AN ARRAY FIND THE DUPLICATE ELEMNT IN ARRAY
+
+#include<iostream>
+using namespace std;
+int main()
+{
+   int n;
+   cout<<"enter the  number = ";
+   cin>>n;
+   int arr[n];
+   for(int i=0;i<=n-1;i++)
+   {
+       cin>>arr[i];
+   }
+   int x;
+   cout<<"enter element = ";
+   cin>>x;
+   for(int i=0;i<=n-1;i++)
+   {
+       if(arr[i]==x)
+       {
+           cout<<"DUPLICATE elements present = "<<x<<endl;
+       }
+       else{
+           cout<<"NO DUPLICATE ELEMENTS.."<<endl;
+       }
+      
+   }
+    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+QUES ->5
+
+
+
+
+#include<iostream>
+using namespace std;
+int main() {
+cout<<”enter 5 elements of the array”<<endl;
+int a[5];
+for(int i=0;i<5;i++){
+cin>>a[i];
+}
+int x=0;
+bool flag=false;
+for(int i=0;i<n;i++){
+if(a[i]!= x){
+cout<<x<<endl;
+flag=true;
+break;
+}
+else x++;
+}
+if(flag==false) cout<<x<<endl;
+return 0;
+}
+
+
+
+
