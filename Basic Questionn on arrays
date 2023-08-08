@@ -34,5 +34,192 @@ using namespace std;
  int n = sizeof(arr)/sizeof(arr[0]);
  cout<<n;
  }
- 
+
+
+
+
+
+
+
+/*#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"enter the number = ";
+    cin>>n;
+    int arr[n];
+    
+    for(int i=0;i<=n-1;i++)
+    {
+        cin>>arr[n];
+        
+    }
+    
+    int s = sizeof(arr)/sizeof(arr[0]);           // cout thr number of element in an array ...
+    cout<<"size of array is"<<s;
+}
+*/
+
+/*
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"enter the elements = ";
+    cin>>n;
+    int arr[n];
+    
+    for(int i=0;i<=n-1;i++)
+    {
+        cin>>arr[i];
+        
+    }
+    
+    int smax;
+    smax=arr[0];
+    for(int i=1;i<=n-1;i++)
+    {
+        if(smax<arr[i])
+        {
+            smax=arr[i];
+        }
+        
+    }
+    cout<<"max number is"<<smax<<endl;
+}
+
+
+
+
+
+
+*/
+// calculate the first and second max in an array
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"enter the elements = ";
+    cin>>n;
+    int arr[n];
+    
+    for(int i=0;i<=n-1;i++)
+    {
+        cin>>arr[i];
+        
+    }
+    
+    int smax;
+    smax=arr[0];
+    for(int i=1;i<=n-1;i++)
+    {
+        if(smax<arr[i])
+        {
+            smax=arr[i];
+        }
+        
+    }
+     int secmax;
+    secmax=arr[0];
+    for(int i=1;i<=n-1;i++)
+    {
+        if(secmax<arr[i] && secmax!=arr[0])
+        {
+            secmax=arr[i];
+        }
+        
+    }
+    cout<<"max number is"<<smax<<endl;
+     cout<<" second max number is"<<secmax<<endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
