@@ -1,0 +1,160 @@
+
+//QUESTION NO 1 ARRAYS ASSIGNEMT 2
+
+/*#include<iostream>
+using namespace std; 
+int main()
+{
+    int n;
+    cout<<"enter the number = ";
+    cin>>n;
+    int arr[n];
+    
+    for(int i=0;i<n-1;i++)
+    {
+        cin>>arr[i];
+    }
+    cout<<endl;
+    int x=0;
+    
+    for(int i=0;i<n-1;i++)
+    {
+        if(arr[i]>x)
+        {
+            
+            x++;
+            
+        }
+    }
+    cout<<"elements greater then X is =  " <<x;
+    
+    
+}
+
+
+*/
+
+/*
+#include<iostream>
+using namespace std;
+int main()
+{
+   int n;
+   cout<<"enter the number = ";
+   cin>>n;
+   int arr[n];
+   for(int i=0;i<n-1;i++)
+   {
+       cin>>arr[i];
+   }
+   int id=-1;
+  
+   for(int i=0;i<n-1;i++)
+   {
+       if(arr[i]<arr[i+1])
+       {
+           id =i;
+           i++;
+            cout<<"array sorted bro "<<id;
+       }
+        else
+       {
+           cout<<i+1;
+        cout<<"arry not sorted at index "<<i+1<<endl;   
+       }
+      
+       
+       }
+        
+       
+           
+       
+      
+   }
+*/
+
+
+// FIND THE DIFF BT THE SUM OF ELEMENTS AT EVEN IDECIES TO THE SUM OD ELEMENTS AT ODD INDICESS...
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"enter the size of array = ";
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n-1;i++)
+    {
+        cin>>arr[i];
+        
+    }
+    int sum = 0;
+    int ssm =0;
+    for(int i=0;i<n-1;i++)
+    {
+        if(i%2==0)
+    {
+        sum+=arr[i];
+    }
+        else
+        {
+            ssm+=arr[i];
+        }
+    }
+    cout<<sum-ssm;
+    return 0;
+    
+}
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
