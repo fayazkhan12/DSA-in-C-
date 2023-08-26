@@ -1,0 +1,203 @@
+// 2D arrays
+
+
+
+/*#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"enter the number of rows = ";
+    cin>>n;
+    int m;
+    cout<<"enter the number of column = ";
+    cin>>m;
+    int arr[n][m];
+    for(int i=0;i<=n-1;i++)
+{
+    for(int j=0;j<=m-1;j++)
+    {
+        cin>>arr[i][j];
+    }
+}
+int sum =0;
+for(int i=0;i<=n-1;i++)
+{
+    for(int j=0;j<=m-1;j++)
+    {
+        sum+=arr[i][j];
+       cout<<arr[i][j]<<" ";
+       cout<<endl;
+       
+       
+    }
+    
+}
+cout<<"sum of all elements of 2d arrays is "<<sum;
+
+cout<<endl;
+
+    
+}
+
+*/
+
+//SUM OF TWO MATRICES 
+
+
+
+/*#include<iostream>
+using namespace std;
+int main()
+{
+   int a[2][3]={4,6,7,84,7};
+   int b[2][3]={2,3,4,4,5,6};
+   int res[2][3];
+   for(int i=0;i<2;i++)
+   {
+       for(int j=0;j<3;j++)
+       {
+           res[i][j]=a[i][j] + b[i][j];
+       }
+       
+       
+   }
+   for(int i=0;i<2;i++)
+   {
+       for(int j=0;j<3;j++)
+       {
+          cout<<res[i][j]<<" ";
+       }
+       cout<<endl;
+       
+   }
+}
+
+*/
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"enter the no of rows = ";
+    cin>>n;
+    int m;
+    cout<<"enter the no of column = ";
+    cin>>m;
+    int arr[n][m];
+    
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<m;j++)
+        {
+            cin>>arr[i][j];
+        }
+    }
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<m;j++)
+        {
+            cout<<arr[j][i]<<" ";
+        }
+        cout<<endl;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// TRANSPOSING A SQUARE MATRIX
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"enter the matrix element = ";
+    cin>>n;
+    int arr[n];
+    
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            cin>>arr[i][j];
+        }
+    }
+    
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    
+    cout<<endl;
+    
+    
+    
+    
+    
+    
+    //transposing the elements os square matrix
+    
+    for(int i=0;i<n;i++)
+    {
+        for(int j=i+1;j<n;j++)
+        {
+            cout<<arr[i][j];
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
