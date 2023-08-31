@@ -1,0 +1,106 @@
+// MATRIX MULTIPLICATION IN C++
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"enter the rows of 1st matrix = ";
+    cin>>n;
+    int m;
+    cout<<"enter the column of the 2nd matrix = ";
+    cin>>m;
+    
+    
+    int p;
+    cout<<"enter the rows of 2nd mmatrix = ";
+    cin>>p;
+    int q;
+    cout<<"enter the rows of 2nd matrix = ";
+    cin>>q;
+    int i,j;
+    
+    if(m==p)
+    {
+        int a[n][m];
+        cout<<"enter the elements of 1st matrix";
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<m;j++)
+            {
+                cin>>a[i][j];
+            }
+        }
+        int b[p][q];
+        
+        cout<<"enter the elements of 2nd matrix";
+        for(int i=0;i<p;i++)
+        {
+            for(int j=0;j<q;j++)
+            {
+                cin>>b[i][j];
+            }
+            cout<<endl;
+        }
+        
+        //we eed to find the resultant matrix
+        
+        int res[n][q];
+        int res[i][j] =0;
+        
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<q;j++)
+            {
+               res[i][j] = 0;
+                
+                for(int k=0;k<p;k++)
+            {
+                res[i][j] += a[i][k] * b[k][j];
+            }
+            
+            }
+        }
+            
+        }
+            
+            
+            
+            
+            
+            
+            //print the output
+
+for(int i=0;i<n;i++)
+{
+    for(int j=0;j<q;j++)
+    {
+        cout<<res[i][j];
+    }
+    cout<<endl;
+}
+        
+        
+
+    else
+    {
+        cout<<"matrix MULTIPLICATION not possible";
+    }
+        
+}        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
